@@ -1,0 +1,83 @@
+﻿.container {
+	padding: 0px;
+}
+.row#cabecera {
+	background-color: #559ff4;
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+h1, h3, a, p, input, label {
+	font-family: Raleway;
+}
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+h3 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+label {
+	margin-left: 15px;
+}
+.row#datos {
+	width: 280px;
+	border-radius: 20px;
+	border: solid 1.5pt #97c3f4;
+	margin-top: 20%;
+	margin-bottom: 20%;
+}
+#usuario, #contraseña {
+	width: 90%;
+	margin-left: 15px;
+	padding: 1px 4px;
+}
+#bloque-boton {
+	text-align: center;
+	margin-top: 10px;
+}
+#datos > p {
+	margin-top: 20px;
+}
+#boton {
+	background-color: #559ff4;
+	width: 40%;
+	font-size: 16px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 5px;
+}
+#bloque-link {
+	text-align: center;
+	margin: 10px 0px;
+}
+a {
+	color: #97c3f4;
+}
+link:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+@media (min-width: 768px) {
+	.container {
+		width: 100%;
+		padding: 0px;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+
+@media (min-width: 992px) {
+	.row#datos {
+		width: 350px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.row#datos {
+		margin-top: 10%;
+		margin-bottom: 0%;
+	}
+}

@@ -1,0 +1,71 @@
+﻿.container {
+	padding: 0px;
+}
+.row#cabecera {
+	background-color: #559ff4;
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+h1, h3, p, option, input, label, button {
+	font-family: Raleway;
+}
+h1, h3 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+input {
+	padding: 1px 4px;
+}
+form {
+	width: 90%;
+}
+.row#datos {
+	width: 90%;
+	border-radius: 20px;
+	border: solid 1.5pt #97c3f4;
+	margin-top: 20%;
+	margin-bottom: 20%;
+}
+#bloque-boton {
+	text-align: center;
+	margin-top: 10px;
+}
+#espol {
+	padding: 3px;
+	width: 35%;
+	margin-bottom: 15px;
+}
+#opciones {
+	padding: 6px 12px;
+	border-bottom-color: rgb(204, 204, 204);
+}
+#campos {
+	color: red;
+	font-size: 13px;
+	padding-left: 0px;
+	margin: 10px 0px;
+}
+span {
+	color: red;
+}
+#boton {
+	background-color: #559ff4;
+	width: 40%;
+	font-size: 16px;
+	margin-bottom: 15px;
+	padding: 5px;
+}
+#facultad {
+	padding: 0px 0px 5px 0px;
+	margin-bottom: 5px;
+}
+
+@media (min-width: 420px){
+	.container {
+		width: 100%;
+	}
+	.row#datos {
+		width: 363px;
+	}
+}
