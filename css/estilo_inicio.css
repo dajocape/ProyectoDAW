@@ -1,12 +1,13 @@
 .container {
 	padding: 0px;
+	width: 100%;
 }
 body{
 	background: url('../img/fondo3.jpg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .row#cabecera {
 	background-color: #559ff4;
@@ -24,12 +25,10 @@ h1 {
 a:hover{
 	text-decoration: none;
 }
-
 #datos{
 	margin-bottom: 10%;
 	margin-top: 10%;
 }
-
 img{
 	max-width: 100%;
 	opacity: 0.4;
@@ -46,7 +45,6 @@ img{
 	border-bottom-right-radius: 20px;
 	border: 1.5pt solid #97c3f4;
 	border-top: none;
-
     background-color: rgba(255,255,255,0.8);
 }
 #bloque1{
@@ -61,11 +59,10 @@ img{
     background-size: 90%;
     background-position: center;
     opacity: 0.6;
-
 }
 #bloque1:hover,#bloque2:hover{
     opacity: 1;
-
+    background-size: 70%;
 }
 #bloque1 h1, #bloque2 h1 {
     padding: 25%;
@@ -85,47 +82,27 @@ img{
 	font-size: 30px;
 	margin-top: 2px;
 }
-@media only screen and (min-width: 992px){
-	#datos{
-		width: 50%;
-	}	
-	#bloque1 h1, #bloque2 h1{
-		font-size: 25px;
-	}
-	#bloque1{
-		border-right: 2px dotted #559ff4;
-	}
-	#bloque1:hover{
-		box-shadow: 6px 0px 5px #888888;
-		border-right: none;
-	}
-	#bloque2:hover{
-		box-shadow: -6px 0px 5px #888888;
-	}
+#datos{
+	width: 60%;
+}	
+#bloque1 h1, #bloque2 h1{
+	font-size: 25px;
+	padding: 20% 25%;
 }
-@media only screen and (min-width: 768px) and (max-width: 990px){
-	#datos{
-		width: 60%;
-	}	
-	#bloque1 h1, #bloque2 h1{
-		font-size: 25px;
-	}
-	#bloque1{
-		border-right: 2px dotted #559ff4;
-	}
-	#bloque1:hover{
-		box-shadow: 6px 0px 5px #888888;
-		border-right: none;
-	}
-	#bloque2:hover{
-		box-shadow: -6px 0px 5px #888888;
-	}
-
+#bloque1{
+	border-bottom: 2px dotted #559ff4;;
 }
-@media only screen and (min-width: 630px) and (max-width: 768px){
-	#datos{
-		width: 60%;
-	}	
+#bloque1, #bloque2 {
+	background-size: 60%;
+}	
+#bloque1:hover{
+	box-shadow: 0px 6px 5px #888888;
+	border-bottom: none;
+}	
+#bloque2:hover {
+	box-shadow: 0px -6px 5px #888888;
+}	
+@media (min-width: 630px){
 	#bloque1 h1, #bloque2 h1{
 		font-size: 30px;
 		padding: 15% 25%;
@@ -145,30 +122,37 @@ img{
     	background-size: 60%;
     	box-shadow: 0px -6px 5px #888888;
 	}	
-
 }
-@media only screen and (max-width: 630px){
+@media (min-width: @screen-sm-min) {
+	#bloque1 h1, #bloque2 h1{
+		font-size: 25px;
+	}
+	#bloque1{
+		border-right: 2px dotted #559ff4;
+	}
+	#bloque1:hover{
+		box-shadow: 6px 0px 5px #888888;
+		border-right: none;
+	}
+	#bloque2:hover{
+		box-shadow: -6px 0px 5px #888888;
+	}
+}
+@media (min-width: @screen-md-min) {
 	#datos{
-		width: 80%;
-		height: 
+		width: 50%;
 	}	
 	#bloque1 h1, #bloque2 h1{
 		font-size: 25px;
-		padding: 20% 25%;
-
 	}
 	#bloque1{
-		border-bottom: 2px dotted #559ff4;;
+		border-right: 2px dotted #559ff4;
 	}
-	#bloque1, #bloque2 {
-    	background-size: 60%;
-	}	
 	#bloque1:hover{
-    	box-shadow: 0px 6px 5px #888888;
-    	border-bottom: none;
-	}	
-	#bloque2:hover {
-    	box-shadow: 0px -6px 5px #888888;
-	}	
+		box-shadow: 6px 0px 5px #888888;
+		border-right: none;
+	}
+	#bloque2:hover{
+		box-shadow: -6px 0px 5px #888888;
+	}
 }
-
