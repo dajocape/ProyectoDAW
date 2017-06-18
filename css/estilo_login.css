@@ -1,5 +1,13 @@
 ﻿.container {
 	padding: 0px;
+
+}
+body{
+	background: url('../img/fondo3.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .row#cabecera {
 	background-color: #559ff4;
@@ -25,8 +33,9 @@ label {
 	width: 280px;
 	border-radius: 20px;
 	border: solid 1.5pt #97c3f4;
-	margin-top: 20%;
-	margin-bottom: 20%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	background-color: rgba(255,255,255,0.8);
 }
 #usuario, #contraseña {
 	width: 90%;
