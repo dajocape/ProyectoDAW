@@ -1,0 +1,67 @@
+﻿.container {
+	padding: 0px;
+	width: 100%;
+}
+body{
+	background: url('../img/fondo3.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.row#cabecera {
+	background-color: #559ff4;
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+h1, input, button {
+	font-family: Raleway;
+}
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+#buscador {
+	width: 95%;
+	margin: 10px auto 10px auto;
+}
+#barra {
+	width: 100%;
+	margin: 3px 0px 3px 0px;
+}
+#boton_buscar {
+	margin: 3px 0px;
+}
+#barra {
+	padding: 3px 5px;
+}
+.row.objeto {
+	width: 95%;
+	background-color: white;
+	padding: 10px;
+	border-radius: 20px;
+	margin: 10px auto 10px auto;
+}
+.row.objeto div {
+	margin: auto;
+}
+img {
+	margin: auto;
+	padding: 10px 15px;
+}
+span {
+	display: none;
+}
+#texto {
+	padding: 10px 15px;
+}
+.bloque_boton {
+	padding: 10px 15px;
+}
+.boton_detalles {
+	margin-top: 10px;
+}
+p {
+	margin-bottom: 3px;
+}

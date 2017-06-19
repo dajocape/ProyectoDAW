@@ -1,13 +1,14 @@
 .container {
 	padding: 0px;
+	width: 100%;
 }
 body{
 	background: url('../img/fondo3.jpg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  font-family: 'Roboto Condensed', sans-serif;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 .row#cabecera {
 	background-color: #559ff4;
@@ -28,12 +29,11 @@ a:hover{
 a{
 	text-decoration: none;
 }
-
 #datos{
+	width: 60%;
 	margin-bottom: 10%;
 	margin-top: 10%;
 }
-
 img{
 	max-width: 100%;
 	opacity: 0.4;
@@ -50,7 +50,6 @@ img{
 	border-bottom-right-radius: 20px;
 	border: 1.5pt solid #97c3f4;
 	border-top: none;
-
     background-color: rgba(255,255,255,0.8);
 }
 #bloque1{
@@ -62,14 +61,13 @@ img{
 #bloque1,#bloque2{
     overflow: hidden;
     background-repeat: no-repeat;
-    background-size: 90%;
+    background-size: 50%;
     background-position: center;
     opacity: 0.6;
-
 }
 #bloque1:hover,#bloque2:hover{
     opacity: 1;
-
+    background-size: 60%;
 }
 #bloque1 h1, #bloque2 h1 {
     padding: 25%;
@@ -77,6 +75,8 @@ img{
     font-family: 'Roboto Condensed', sans-serif;
     text-shadow: 3px 3px 3px black;
     color: white;
+    font-size: 25px;
+	padding: 20% 25%;
 } 
 #titulo{
 	text-align: center;
@@ -88,7 +88,47 @@ img{
 	font-size: 30px;
 	margin-top: 2px;
 }
-@media only screen and (min-width: 992px){
+#bloque1:hover{
+	box-shadow: 0px 6px 5px #888888;
+	border-bottom: none;
+}	
+#bloque2:hover {
+	box-shadow: 0px -6px 5px #888888;
+}
+@media only screen and (min-width: 630px) and (max-width: 767px){
+	#bloque1 h1, #bloque2 h1{
+		font-size: 30px;
+		padding: 15% 25%;
+	}
+	#bloque1, #bloque2 {
+		background-size: 40%;
+	}
+	#bloque1:hover{
+    	box-shadow: 0px 6px 5px #888888;
+    	border-bottom: none;
+    	background-size: 50%;
+	}	
+	#bloque2:hover {
+    	box-shadow: 0px -6px 5px #888888;
+    	background-size: 50%;
+	}	
+}
+@media (min-width: @screen-sm-min){
+	#bloque1 h1, #bloque2 h1{
+		font-size: 25px;
+	}
+	#bloque1{
+		border-right: 2px dotted #559ff4;
+	}
+	#bloque1:hover{
+		box-shadow: 6px 0px 5px #888888;
+		border-right: none;
+	}
+	#bloque2:hover{
+		box-shadow: -6px 0px 5px #888888;
+	}
+}
+@media (min-width: @screen-md-min){
 	#datos{
 		width: 50%;
 	}	
@@ -97,6 +137,7 @@ img{
 	}
 	#bloque1{
 		border-right: 2px dotted #559ff4;
+		margin-bottom: 0px;
 	}
 	#bloque1:hover{
 		box-shadow: 6px 0px 5px #888888;
@@ -106,72 +147,3 @@ img{
 		box-shadow: -6px 0px 5px #888888;
 	}
 }
-@media only screen and (min-width: 768px) and (max-width: 990px){
-	#datos{
-		width: 60%;
-	}	
-	#bloque1 h1, #bloque2 h1{
-		font-size: 25px;
-	}
-	#bloque1{
-		border-right: 2px dotted #559ff4;
-	}
-	#bloque1:hover{
-		box-shadow: 6px 0px 5px #888888;
-		border-right: none;
-	}
-	#bloque2:hover{
-		box-shadow: -6px 0px 5px #888888;
-	}
-
-}
-@media only screen and (min-width: 630px) and (max-width: 768px){
-	#datos{
-		width: 60%;
-	}	
-	#bloque1 h1, #bloque2 h1{
-		font-size: 30px;
-		padding: 15% 25%;
-	}
-	#bloque1, #bloque2 {
-    	background-size: 50%;
-	}
-	#bloque1{
-		border-bottom: 2px dotted #559ff4;
-	}
-	#bloque1:hover{
-    	background-size: 60%;
-    	box-shadow: 0px 6px 5px #888888;
-    	border-bottom: none;
-	}	
-	#bloque2:hover {
-    	background-size: 60%;
-    	box-shadow: 0px -6px 5px #888888;
-	}	
-
-}
-@media only screen and (max-width: 630px){
-	#datos{
-		width: 80%;
-		height: 
-	}	
-	#bloque1 h1, #bloque2 h1{
-		font-size: 25px;
-		padding: 20% 25%;
-
-	}
-	#bloque1{
-		border-bottom: 2px dotted #559ff4;;
-	}
-	#bloque1, #bloque2 {
-    	background-size: 60%;
-	}	
-	#bloque1:hover{
-    	box-shadow: 0px 6px 5px #888888;
-    	border-bottom: none;
-	}	
-	#bloque2:hover {
-    	box-shadow: 0px -6px 5px #888888;
-	}	
-}
-
