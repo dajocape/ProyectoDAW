@@ -135,6 +135,9 @@ img{
 	#bloque1 h1, #bloque2 h1{
 		font-size: 25px;
 	}
+	#bloque h1 {
+		height: 54px;
+	}
 	#bloque1{
 		border-right: 2px dotted #559ff4;
 		margin-bottom: 0px;
