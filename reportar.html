@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/estilo_reportar.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+		<title>Reportar</title>
+	</head>
+	<body>
+		<div class="container">
+			<div id="cabecera" class="row">
+				<h1 class="col-xs-12 col-sm-12 col-md-12 col-lg-12">FOUNDPOL</h1>
+			</div>
+			<div id="barra-titulo">
+				REPORTAR OBJETO
+			</div>
+			<div id="datos" class="row center-block">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<form class="center-block">
+						<div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6" id="col1">
+							<h2 class="titulo-datos">DATOS DEL OBJETO</h2>
+							<label>Objeto<span>*</span></label>
+							<input type="text" id="objeto" name="objeto" class="form-control" required>
+							<label>Descripción<span>*</span></label>
+							<textarea class="form-control" id="dec" name="desc" required=""></textarea>
+							<label>Fecha<span>*</span></label>
+							<input type="date" class="form-control" id="fecha" name="fecha" required>
+							<label>Imagen</label>
+							<input type="file" name="imagen" id="imagen" accept="image/*">
+						</div>
+						<div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6" id="col2">
+							<h2 class="titulo-datos">DATOS DEL CONTACTO</h2>
+							<label>Teléfono</label>
+							<input type="text" class="form-control" id="telf" name="telf" required>
+							<label>Celular</label>
+							<input type="text" class="form-control" id="celular" name="celular" required>
+							<label>Otro correo</label>
+							<input type="text" class="form-control" id="otroCorreo" name="otroCorreo"  required>
+							
+						</div>
+					</form>					
+				</div>
+				<!--div class="row" id="botones"-->
+						<div id="bloque-boton" class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<input type="submit" value="Aceptar" id="boton">
+						</div>
+						<div id="bloque-boton" class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<input type="submit" value="Cancelar" id="boton">
+						</div>
+				<!--/div-->
+			</div>
+		</div>
+	</body>
+</html>

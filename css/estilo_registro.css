@@ -7,6 +7,7 @@ body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 .row#cabecera {
 	background-color: #559ff4;
@@ -63,6 +64,7 @@ span {
 	font-size: 16px;
 	margin-bottom: 15px;
 	padding: 5px;
+	color: white;
 }
 #facultad {
 	padding: 0px 0px 5px 0px;

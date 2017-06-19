@@ -1,0 +1,51 @@
+.container {
+  padding: 0px;
+}
+#cabecera {
+  background-color: #559ff4;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+
+  background: url(../img/fondo3.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1{
+  text-align: center;
+
+    font-family: 'Pacifico', cursive;
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 50px;
+
+    color: white;
+    text-shadow:
+   -1px -1px 0 black,
+    1px -1px 0 black,
+   -1px 1px 0 black,
+    1px 1px 0 black;
+
+}
+a{
+  text-shadow:
+   -1px -1px 0 black,
+    1px -1px 0 black,
+   -1px 1px 0 black,
+    1px 1px 0 black;
+  font-size: 25px;
+}
+
+#paginas{
+  border: 1px solid #559ff4;
+  margin-top: 20px;
+  text-align: center;
+}
