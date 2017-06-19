@@ -15,7 +15,7 @@ body{
 	margin-left: 0px;
 	margin-right: 0px;
 }
-h1, input, button {
+h1, input, button, p {
 	font-family: Raleway;
 }
 h1 {
@@ -26,15 +26,13 @@ h1 {
 	width: 95%;
 	margin: 10px auto 10px auto;
 }
-#barra {
-	width: 100%;
-	margin: 3px 0px 3px 0px;
-}
-#boton_buscar {
+.boton_buscar {
 	margin: 3px 0px;
+	padding: 3px 0px;
 }
-#barra {
+.barra {
 	padding: 3px 5px;
+	margin: 3px 0px 3px 0px;
 }
 .row.objeto {
 	width: 95%;
@@ -53,16 +51,55 @@ img {
 span {
 	display: none;
 }
-#texto {
+.texto {
 	padding: 10px 15px;
 }
 .bloque_boton {
 	padding: 10px 15px;
-}
-.boton_detalles {
-	margin-top: 10px;
+	text-align: center;
 }
 p {
 	font-style: italic;
 	margin-bottom: 3px;
+	text-align: justify;
+}
+.descripcion > p{
+	font-style: normal;
+	margin-bottom: 20px;
+}
+@media only screen and (min-width: 500px) and (max-width: 579px) {
+	.barra {
+		width: 75%;
+	}
+	.boton_buscar {
+		width: 25%;
+	}
+}
+@media only screen and (min-width: 580px) and (max-width: 767px) {
+	.col-sm-4 {
+		width: 33.33%;
+	}
+	.col-sm-5 {
+		width: 41.66%;
+	}
+	.col-sm-3 {
+		width: 25%;
+	}
+	.col-sm-10 {
+		width: 83.33%;
+	}
+	.col-sm-2 {
+		width: 16.66%;
+	}
+}
+@media (min-width: @screen-sm-min) {
+	span {
+		display: initial;
+		margin-bottom: 5px;
+	}
+}
+@media (min-width: @screen-md-min) {
+	.container .row#buscador, .container .row.objeto {
+		width: 943px;
+	}
 }
