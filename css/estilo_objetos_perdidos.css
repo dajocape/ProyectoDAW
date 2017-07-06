@@ -1,0 +1,70 @@
+.contenedor {
+    padding: 0px;
+    width: 100%;
+}
+body{
+    background: url('../img/fondo3.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.row#cabecera {
+    background-color: #559ff4;
+    width: 100%;
+    height: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+a, p{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#cabecera h1 {
+    text-align: center;
+    margin-top: 30px !important;
+    margin-bottom: 20px !important;
+    font-family: 'Kaushan Script', cursive !important;
+    color: white !important;
+    font-size: 45px !important;
+} 
+.grafico{
+    width: 70%;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 30px;
+    border: 0.5pt solid #97c3f4;
+    margin-bottom: 7%;
+    margin-top: 7%;
+}   
+.bar {
+    fill: #5f89ad;
+}
+        
+.axis {
+    font-size: 13px;
+}
+        
+.axis path, .axis line {
+    fill: none;
+    display: none;
+}
+        
+.label {
+    font-size: 13px;
+}
+p {
+    margin: 30px 10px 30px !important;
+    font-size: 20px;
+    text-align: justify;
+}
+@media only screen and (min-width: 630px) and (max-width: 767px){
+    .grafico{
+        width: 60%;
+    }
+
+}
+@media only screen and (max-width: 629px){
+    .grafico{
+        width: 85%;
+    }
+}

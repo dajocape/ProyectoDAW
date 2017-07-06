@@ -1,4 +1,4 @@
-.container {
+.contenedor {
 	padding: 0px;
 	width: 100%;
 }
@@ -20,13 +20,13 @@ body{
 a, p, input, label {
 	font-family: 'Roboto Condensed', sans-serif;
 }
-h1 {
+#cabecera h1 {
 	text-align: center;
-	margin-top: 30px;
-	margin-bottom: 20px;
-	font-family: 'Kaushan Script', cursive;
-	color: white;
-	font-size: 45px;
+	margin-top: 30px !important;
+	margin-bottom: 20px !important;
+	font-family: 'Kaushan Script', cursive !important;
+	color: white !important;
+	font-size: 45px !important;
 }
 a:hover{
 	text-decoration: none;
@@ -35,7 +35,7 @@ a{
 	text-decoration: none;
 }
 #datos{
-	width: 60%;
+	width: 40%;
 	margin-bottom: 10%;
 	margin-top: 10%;
 }
@@ -82,15 +82,21 @@ img{
 }
 #bloque1 h1, #bloque2 h1 {
     padding: 25%;
+    text-align: center;
     z-index: 2;
     font-family: 'Roboto Condensed', sans-serif;
-    text-shadow: 3px 3px 3px black;
+    text-shadow: 2px 2px 2px #000;
     color: white;
-    font-size: 25px;
-	padding: 20% 25%;
+    font-size: 23px;
+	padding: 25% 25% 25% 30%;
+}
+#bloque1 a:hover, #bloque2 a:hover {
+	text-decoration: none;
+	text-shadow: 2px 2px 2px #3dadac;
 }
 h2{
 	text-align: center;
+	font-size: 28px;
 } 
 #titulo{
 	margin-bottom: 0px;
@@ -105,13 +111,36 @@ h2{
 #bloque2:hover {
 	box-shadow: 0px 6px 5px #888888;
 }
+
+/* Menu*/
+.navbar-inverse {
+    background-color: #005b9b !important;
+    border-color: #005b9b !important;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #ffffff !important;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    background-color: #559ff4 !important;
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+    background-color: #559ff4 !important;
+}
+
+bootstrap.css:4642
+
+
+
 @media only screen and (min-width: 630px) and (max-width: 767px){
+	#datos{
+		width: 40%;
+	}
     #bloqueTitulo h2{
 		font-size: 20px;
 	}
 	#bloque1 h1, #bloque2 h1{
 		font-size: 30px;
-		padding: 15% 25%;
+		padding: 15% 25% 25% 20%;
 	}
 	#bloque1, #bloque2 {
 		background-size: 40%;
@@ -132,6 +161,9 @@ h2{
 	}	
 }
 @media only screen and (max-width: 629px){
+	#datos{
+		width: 80%;
+	}
 	#bloqueTitulo h2{
 		font-size: 20px;
 	}
