@@ -39,8 +39,11 @@ html {
 #espacio.row {
     width: 70%;
     background-color: rgba(255,255,255,0.8);
-    border-radius: 30px;
+    border-radius: 10px;
     border: 0.5pt solid #97c3f4;
     margin-bottom: 7%;
     margin-top: 7%;
+}
+#linea {
+    margin-bottom: 0px;
 }
