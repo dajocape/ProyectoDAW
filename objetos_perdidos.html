@@ -10,15 +10,13 @@
     <!--link href="css/bootstrap.min.css" rel="stylesheet"-->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilo_objetos_perdidos.css" />
+    <link rel="stylesheet" href="css/estilo_general.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    
-
 
 </head>
 
@@ -27,12 +25,42 @@
         <div id="cabecera" class="row">
             <h1 class="col-xs-12 col-sm-12 col-md-12 col-lg-12">F <i class="fa fa-search" style="color: white;"></i>undpol</h1>
         </div>
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li class="dropdown active">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Reportes<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li class="active"><a href="objetos_perdidos.html">Objetos que se pierden con frecuencia</a></li>
+                    <li><a href="linea_tiempo.html">Objetos perdidos en esta semana</a></li>
+                  </ul>
+                </li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">¿Quiénes somos?</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span>Dajocape</a></li>
+                <li><a href="login.html"><span class="glyphicon glyphicon-log-out"></span>Cerrar sesión</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
         <div class="row center-block grafico">
-            <div class="col-xs-12 col-md-6 col-sm-6 col-lg-6">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <h3>Objetos vs Frecuencia</h3>
                 <p>En la siguiente gráfica se indica cuáles son los objetos que generalmente los estudiantes pierden y la frecuencia con la que estos lo hacen</p>
             </div>
-            <div id="graphic" class="col-xs-12 col-md-6 col-sm-6 col-lg-6"></div>
+            <div id="graphic" class="col-xs-12 col-sm-12 col-md-6 col-lg-6"></div>
         </div>
     </div>
 

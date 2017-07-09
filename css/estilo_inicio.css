@@ -1,33 +1,3 @@
-.contenedor {
-	padding: 0px;
-	width: 100%;
-}
-body{
-	background: url('../img/fondo3.jpg') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-.row#cabecera {
-	background-color: #559ff4;
-	width: 100%;
-	height: 100px;
-	margin-left: 0px;
-	margin-right: 0px;
-}
-a, p, input, label {
-	font-family: 'Roboto Condensed', sans-serif;
-}
-#cabecera h1 {
-	text-align: center;
-	margin-top: 30px !important;
-	margin-bottom: 20px !important;
-	font-family: 'Kaushan Script', cursive !important;
-	color: white !important;
-	font-size: 45px !important;
-}
 a:hover{
 	text-decoration: none;
 }
@@ -75,7 +45,7 @@ img{
 }
 #bloque1:hover,#bloque2:hover{
     opacity: 1;
-    background-size: 60%;
+    background-size: 55%;
 }
 #bloque1:hover{
     border-right: none;
@@ -87,8 +57,8 @@ img{
     font-family: 'Roboto Condensed', sans-serif;
     text-shadow: 2px 2px 2px #000;
     color: white;
-    font-size: 23px;
-	padding: 25% 25% 25% 30%;
+    font-size: 20px;
+	padding: 25% 25% 25% 25%;
 }
 #bloque1 a:hover, #bloque2 a:hover {
 	text-decoration: none;
@@ -100,9 +70,11 @@ h2{
 } 
 #titulo{
 	margin-bottom: 0px;
+	font-size: 25px;
 }
 #sub-titulo{
 	margin-top: 1px;
+	font-size: 25px;
 }
 #bloque1:hover{
 	box-shadow: 0px 6px 5px #888888;
@@ -112,38 +84,17 @@ h2{
 	box-shadow: 0px 6px 5px #888888;
 }
 
-/* Menu*/
-.navbar-inverse {
-    background-color: #005b9b !important;
-    border-color: #005b9b !important;
-}
-.navbar-inverse .navbar-nav>li>a {
-    color: #ffffff !important;
-}
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
-    background-color: #559ff4 !important;
-}
-.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
-    background-color: #559ff4 !important;
-}
-
-bootstrap.css:4642
-
-
 
 @media only screen and (min-width: 630px) and (max-width: 767px){
-	#datos{
-		width: 40%;
-	}
     #bloqueTitulo h2{
 		font-size: 20px;
 	}
 	#bloque1 h1, #bloque2 h1{
-		font-size: 30px;
-		padding: 15% 25% 25% 20%;
+		font-size: 28px;
+		padding: 25% 25% 25% 25%;
 	}
 	#bloque1, #bloque2 {
-		background-size: 40%;
+		background-size: 50%;
 	}
 	#bloque1{
 		border-style: none;
@@ -162,13 +113,16 @@ bootstrap.css:4642
 }
 @media only screen and (max-width: 629px){
 	#datos{
-		width: 80%;
+		width: 70%;
 	}
 	#bloqueTitulo h2{
 		font-size: 20px;
 	}
 	#bloque1 h1, #bloque2 h1{
-		font-size: 25px;
+		font-size: 22px;
+	}
+	#bloque1, #bloque2 {
+		background-size: 45%;
 	}
 	#bloque1{
 		border-style: none;
