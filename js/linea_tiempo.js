@@ -9,126 +9,74 @@ function supportsSvg() {
 }
 
 function getDataFromDefinitionList(linea) { 
-  	var children = linea.children;
-  	var yearIndex = {};
+  	var hijos = linea.children;
+    var fechaIndex = {};
   	var data = [];
-  	var currentYear = null;
-  	for (var childIndex = 0; childIndex < children.length; childIndex++) {
-    	var child = children[childIndex];
-    	if (child.nodeName == 'DT') {
-      		currentYear = child.textContent;
-    	} else if (child.nodeName == 'DD' && currentYear !== null) {
-      		if (!yearIndex[currentYear]) {
-        		yearIndex[currentYear] = data.length;
+  	var fechaActual = null;
+    console.log(hijos.length);
+  	for (var indiceHijo = 0; indiceHijo < hijos.length; indiceHijo++) {
+    	var hijo = hijos[indiceHijo];
+    	if (hijo.nodeName == 'DT') {
+      		fechaActual = hijo.textContent;
+    	} else if (hijo.nodeName == 'DD' && fechaActual !== null) {
+      		if (!fechaIndex[fechaActual]) {
+        		fechaIndex[fechaActual] = data.length;
         		data.push({
-          			year: +currentYear,
+          			fecha: +fechaActual,
           			values: []
         		});
       		}
-      		data[yearIndex[currentYear]].values.push(child.textContent);
+      		data[fechaIndex[fechaActual]].values.push(hijo.textContent);
     	}
   	}
-  	return data;
+    return data;
 }
 
 function createSvgElement() {
   	var element = document.createElementNS(SVG_NS, 'svg');
   	element.setAttribute('width', '100%');
   	element.setAttribute('height', '250px');
-  	// Improvement... 
-  	// you should set a viewBox so that when the page scales 
-  	// the whole timeline is still viewable.
   	element.classList.add('timeline-visualization');
   	return element;
 }
 
 function drawTimeline(svgElement, data) {
   	var paper = Snap(svgElement);
-  	var canvasSize = parseFloat(getComputedStyle(paper.node)["width"]);
-  	var start = +data[0].year;
-  	var end = +data[data.length - 1].year;
-  	// add some padding
-  	start--;
-  	end++; end++;
-  	var range = end - start;
-  	paper.line(0, 200, canvasSize, 200).attr({
-    	'stroke': 'black',
-    	'stroke-width': 2
-  	});
-  	data.forEach(function(datum) {
-    	var x = canvasSize * (datum.year - start) / range;
-    	paper.circle(x, 200, 6);
-    	paper.text(x, 230, datum.year).attr({
-      		'text-anchor': 'middle'
-    	});    
-    	var averageIndex = (datum.values.length - 1) / 2;
-    	var xOffsetSize = 24;
-    	datum.values.forEach(function(value, index) {
-      		var offset = (index - averageIndex) * xOffsetSize;
+    var canvasSize = parseFloat(getComputedStyle(paper.node)["width"]);
+    var start = +data[0].fecha;
+    var end = +data[data.length - 1].fecha;
+    start--;
+    end++; 
+    end++;
+    var range = end - start;
+    paper.line(0, 200, canvasSize, 200).attr({
+        'stroke': 'black',
+        'stroke-width': 2
+    });
+    data.forEach(function(datum) {
+        var x = canvasSize * (datum.fecha - start) / range;
+        paper.circle(x, 200, 6);
+        paper.text(x, 230, (datum.fecha + "/06")).attr({
+            'text-anchor': 'middle'
+        });    
+        var averageIndex = (datum.values.length - 1) / 2;
+        var xOffsetSize = 24;
+        datum.values.forEach(function(value, index) {
+            var offset = (index - averageIndex) * xOffsetSize;
             paper.text(x + offset, 180, value).attr({
-          		'text-anchor': 'start'
-        	})
-        	.transform('r -45 ' + (x + offset) + ' 180');
-    	});
-  	});
+                'text-anchor': 'start'
+            })
+            .transform('r -45 ' + (x + offset) + ' 180');
+        });
+    });
 }
 
-function cargarLineaTiempo(){
-	if (supportsSvg()) {
-	  	var linea = document.querySelector('#linea');
-	  	linea.style.display = 'none';
-	  	var data = getDataFromDefinitionList(linea);
-	  	var svgElement = createSvgElement();
-	  	linea.parentNode.insertBefore(svgElement, linea);
-	  	drawTimeline(svgElement, data);
-	}
-}
-
-function llenarTabla(){
-	$.ajax({
-		url:'json/datos.json',
-		data:{format:'Json'},
-		error:function(){
-	        alert("No se pudo cargar el archivo JSON");
-	    },
-		dataType:'Json',
-		success:function(data){
-			var $fila, $cabecera, $elemento, $fecha, $objeto, $lugar, $link, $cont;
-			$cabecera = $('<thead>');
-			$fila = $('<tr>');
-			$elemento = $('<th>').text('Fecha');
-			$fila.append($elemento);
-			$elemento = $('<th>').text('Objeto');
-			$fila.append($elemento);
-			$elemento = $('<th>').text('Lugar');
-			$fila.append($elemento);
-			$elemento = $('<th>').text('Detalles');
-			$fila.append($elemento);
-			$cabecera.append($fila);
-			$('#tabla').append($cabecera);
-			$.each(data, function(){
-				for(var i = 0; i < this.objeto.length; i++){
-					$fila = $('<tr>');
-					$fecha = $('<td>').text(this.fecha);
-					$objeto = $('<td>').text(this.objeto[i]);
-					$lugar = $('<td>').text(this.lugar[i]);
-					$cont = $('<td>');
-					$link = $('<a>');
-					$link.text('Ver detalles');
-					$link.attr('href',this.link[i]);
-					$cont.append($link);
-					$fila.append($fecha);
-					$fila.append($objeto);
-					$fila.append($lugar);
-					$fila.append($cont);
-					$('#tabla').append($fila);
-				}
-			});
-		},
-		type:'GET',
-	});
-}
-
-window.onload = function(){
-	llenarTabla();
+if (supportsSvg()) {
+  	var linea = document.querySelector('#linea');
+  	linea.style.display = 'none';
+  	var data = getDataFromDefinitionList(linea);
+    console.log(data);
+  	var svgElement = createSvgElement();
+  	linea.parentNode.insertBefore(svgElement, linea);
+  	drawTimeline(svgElement, data);
 }
