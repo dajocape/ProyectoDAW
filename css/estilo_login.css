@@ -18,6 +18,7 @@ label {
 	margin-top: 10%;
 	margin-bottom: 10%;
 	background-color: rgba(255,255,255,0.8);
+	box-shadow: 5px 5px 5px rgba(136, 136, 136, 1);
 }
 #usuario, #contraseña {
 	width: 90%;
@@ -32,7 +33,7 @@ label {
 	margin-top: 20px;
 }
 .boton_ingresar{
-	background-color: #559ff4;
+	background-color: rgba(85, 159, 244, 1);
     border: none;
     color: white;
     padding: 10px 25px;
@@ -46,7 +47,6 @@ label {
 	text-decoration: none !important;
 	color: white !important;
 }
-
 #bloque-link {
 	text-align: center;
 	margin: 10px 0px;
@@ -58,7 +58,6 @@ link:hover {
 	text-decoration: underline;
 	cursor: pointer;
 }
-
 @media (min-width: 768px) {
 	.container {
 		width: 100%;
@@ -67,13 +66,11 @@ link:hover {
 		margin-right: 0px;
 	}
 }
-
 @media (min-width: 992px) {
 	.row#datos {
 		width: 350px;
 	}
 }
-
 @media (min-width: 1200px) {
 	.row#datos {
 		margin-top: 10%;

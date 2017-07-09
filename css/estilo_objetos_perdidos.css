@@ -5,20 +5,18 @@
     border: 0.5pt solid #97c3f4;
     margin-bottom: 7%;
     margin-top: 7%;
+    box-shadow: 5px 5px 5px rgba(136, 136, 136, 1);
 }   
 .bar {
     fill: #5f89ad;
-}
-        
+} 
 .axis {
     font-size: 13px;
-}
-        
+}     
 .axis path, .axis line {
     fill: none;
     display: none;
-}
-        
+}      
 .label {
     font-size: 13px;
 }
@@ -31,7 +29,6 @@ p {
     .grafico{
         width: 60%;
     }
-
 }
 @media only screen and (max-width: 629px){
     .grafico{

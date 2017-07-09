@@ -31,17 +31,17 @@ a, p, input, label {
 
 /* Menu*/
 .navbar-inverse {
-    background-color: #005b9b !important;
-    border-color: #005b9b !important;
+    background-color: rgba(0, 91, 155, 1) !important;
+    border-color: rgba(0, 91, 155, 1) !important;
 }
 .navbar-inverse .navbar-nav>li>a {
     color: #ffffff !important;
 }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
-    background-color: #559ff4 !important;
+    background-color: rgba(85, 159, 244, 1) !important;
 }
 .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
-    background-color: #559ff4 !important;
+    background-color: rgba(85, 159, 244, 1) !important;
 }
 .navbar-inverse .navbar-brand {
     color: #ffffff !important;

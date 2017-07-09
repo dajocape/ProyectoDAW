@@ -8,20 +8,33 @@
     background-color: #4a71c7;
     padding: 10px;
 }
-.espacio.row {
+#bloque1, #bloque2 {
     width: 70%;
     background-color: rgba(255,255,255,0.8);
     border-radius: 10px;
     border: 0.5pt solid #97c3f4;
-    margin-bottom: 3%;
-    margin-top: 3%;
+    box-shadow: 5px 5px 5px rgba(136, 136, 136, 1);
 }
-.titulo.row {
+#bloque2 {
+    margin-bottom: 20px;
+}
+#titulo1 {
     width: 70%;
     background-color: rgba(255,255,255,0.8);
     border-radius: 10px;
     border: 0.5pt solid #97c3f4;
-    margin-top: 1%;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px rgba(136, 136, 136, 1);
+}
+#titulo2 {
+    width: 70%;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 10px;
+    border: 0.5pt solid #97c3f4;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px rgba(136, 136, 136, 1);
 }
 h4 {
     text-align: center;

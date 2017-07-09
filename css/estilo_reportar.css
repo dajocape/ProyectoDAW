@@ -1,6 +1,5 @@
 option, button {
 	font-family: 'Roboto Condensed', sans-serif;
-
 }
 h3{
 	text-align: center;
@@ -25,15 +24,15 @@ form {
 	margin-top: 5%;
 	margin-bottom: 5%;
 	background-color: rgba(255,255,255,0.8);
+	box-shadow: 5px 5px 5px rgba(136, 136, 136, 1);
 }
-
-#bloque-boton {
+.bloque-boton {
 	text-align: center;
 	margin-top: 10px;
 	margin-bottom: 15px;
 }
 .botones{
-	background-color: #005b9b;
+	background-color: rgba(0, 91, 155, 1);
     border: none;
     color: white;
     padding: 10px 25px;
@@ -41,7 +40,6 @@ form {
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
-
 }
 .botones:hover{
 	text-decoration: none !important;
@@ -58,8 +56,8 @@ form {
 	color: white;
 }
 input#imagen{
-  color: transparent;
-  width: 100%;
+  	color: transparent;
+  	width: 100%;
 }
 .titulo-datos{
 	border-bottom: 2px solid black;

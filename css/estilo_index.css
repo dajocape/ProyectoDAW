@@ -1,14 +1,13 @@
-a{
-  text-shadow:
-   -1px -1px 0 black,
-    1px -1px 0 black,
-   -1px 1px 0 black,
+a {
+  	text-shadow:
+   	-1px -1px 0 black,
+   	1px -1px 0 black,
+   	-1px 1px 0 black,
     1px 1px 0 black;
-  font-size: 25px;
+  	font-size: 25px;
 }
-
-#paginas{
-  border: 1px solid #559ff4;
-  margin-top: 20px;
-  text-align: center;
+#paginas {
+  	border: 1px solid #559ff4;
+  	margin-top: 20px;
+  	text-align: center;
 }

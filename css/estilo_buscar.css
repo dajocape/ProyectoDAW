@@ -12,11 +12,12 @@
 }
 .row.objeto {
 	width: 70%;
-	background-color: white;
 	padding: 10px;
 	border-radius: 20px;
 	margin: 10px auto 10px auto;
 	background-color: rgba(255,255,255,0.8);
+	border: solid 0.5pt #97c3f4;
+	box-shadow: 5px 5px 5px rgba(136, 136, 136, 1);
 }
 .row.objeto div {
 	margin: auto;
@@ -45,7 +46,7 @@ p {
 	margin-bottom: 20px;
 }
 .boton_detalles{
-	background-color: #005b9b;
+	background-color: rgba(0, 91, 155, 1);
     border: none;
     color: white;
     padding: 10px 25px;
@@ -56,14 +57,14 @@ p {
 
 }
 .boton_detalles:hover{
-	text-decoration: none !important;
-	color: white !important;
+	text-decoration: none;
+	color: white ;
 }
 @media (max-width: 768px){
 	#buscador {
 		width: 90%;
 	}
 	.row.objeto {
-	width: 90%;
+		width: 90%;
 	}
 }

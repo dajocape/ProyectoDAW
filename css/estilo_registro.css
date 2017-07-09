@@ -27,6 +27,7 @@ form {
 	margin-top: 5%;
 	margin-bottom: 5%;
 	background-color: rgba(255,255,255,0.8);
+	box-shadow: 5px 5px 5px rgba(136, 136, 136, 1);
 }
 #bloque-boton {
 	text-align: center;
@@ -51,7 +52,7 @@ span {
 	color: red;
 }
 #boton {
-	background-color: #559ff4;
+	background-color: rgba(85, 159, 244, 1);
 	width: 40%;
 	font-size: 16px;
 	margin-bottom: 15px;
@@ -62,7 +63,6 @@ span {
 	padding: 0px 0px 5px 0px;
 	margin-bottom: 5px;
 }
-
 @media (min-width: 420px){
 	.container {
 		width: 100%;

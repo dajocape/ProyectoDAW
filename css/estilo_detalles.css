@@ -7,6 +7,7 @@
 	margin-right: auto;
 	border: solid 0.5pt #97c3f4;
 	background-color: rgba(255,255,255,0.8);
+	box-shadow: 5px 5px 5px rgba(136, 136, 136, 1);
 }
 #datos_objeto {
 	margin-left: auto;
@@ -22,6 +23,7 @@ img {
 #mapa {
 	height: 300px;
 	width: 100%;
+	margin-bottom: 10px;
 }
 html, body {
 	height: 100%;

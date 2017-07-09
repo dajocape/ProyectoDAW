@@ -1,6 +1,6 @@
 ﻿function llenarTabla(){
 	$.ajax({
-		url:'json/datos.json',
+		url:'data/datos.json',
 		data:{format:'Json'},
 		error:function(){
 	        alert("No se pudo cargar el archivo JSON");

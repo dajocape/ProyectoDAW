@@ -13,7 +13,6 @@ function getDataFromDefinitionList(linea) {
     var fechaIndex = {};
   	var data = [];
   	var fechaActual = null;
-    console.log(hijos.length);
   	for (var indiceHijo = 0; indiceHijo < hijos.length; indiceHijo++) {
     	var hijo = hijos[indiceHijo];
     	if (hijo.nodeName == 'DT') {
@@ -75,7 +74,6 @@ if (supportsSvg()) {
   	var linea = document.querySelector('#linea');
   	linea.style.display = 'none';
   	var data = getDataFromDefinitionList(linea);
-    console.log(data);
   	var svgElement = createSvgElement();
   	linea.parentNode.insertBefore(svgElement, linea);
   	drawTimeline(svgElement, data);
