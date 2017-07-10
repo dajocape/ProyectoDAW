@@ -22,22 +22,20 @@
 			</div>
 			<div id="datos" class="row center-block">
 				<h3 class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Log in</h3>
-				<form class="center-block" data-toggle="validator" role="form">
+				<form action="inicio.html" class="center-block" data-toggle="validator" role="form">
 				  	<div class="form-group">
 				    	<label>Usuario: </label>
-				    	<input type="text" class="form-control" id="usuario" maxlength="15" data-error="Campo requerido" required>
-				    	<div class="help-block with-errors"></div>
+				    	<input type="text" class="form-control" id="usuario" maxlength="15" required>
 				  	</div>
 				  	<div class="form-group">
 				    	<label>Contraseña: </label>
-				    	<input type="password" class="form-control" id="contraseña" data-minlength="6" maxlength="15" data-error="Mínimo 6 caracteres" required>
-				    	<div class="help-block with-errors"></div>
+				    	<input type="password" class="form-control" id="contraseña" minlength="6" maxlength="15" required>
 				  	</div>
-				</form>
+				
 				<div id="bloque-boton" class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<button id="submit" type="submit" class="btn btn-primary boton_ingresar">Ingresar</button>
-					<!--a id="submit" type="submit" class="btn btn-primary" href="inicio.html" role="button">Ingresar</a-->
+					<input type="submit" class="btn btn-primary boton_ingresar" value="ingresar"></button>
 				</div>
+				</form>
 				<div id="bloque-link" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<a href="registro.html">Registrarse</a>
 				</div>

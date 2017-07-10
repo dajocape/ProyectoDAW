@@ -33,7 +33,7 @@
 				  	<div class="form-group">
 				    	<label>Correo: <span>*</span></label>
 				    	<div class="input-group">
-				    		<input type="email" class="form-control" id="correo" required>
+				    		<input type="text" class="form-control" id="correo" required>
 				    		<div class="input-group-addon">@espol.edu.ec</div>
 				    	</div>
 				  	</div>
@@ -43,8 +43,8 @@
 				  	</div>
 				  	<div class="form-group">
 					    <label>Contraseña: <span>*</span></label>
-				    	<input type="password" class="form-control" id="contraseña" required>
-				  	</div>
+				    	<input type="password" class="form-control" id="contraseña" minlength="6" maxlength="15" data-error="Mínimo 6 caracteres" required>	
+				    </div>
 				  	<div class="form-group">
 					  	<label id="facultad" class="col-xs-12">Facultad:</label>
 						<select id="opciones" class="col-xs-12">
@@ -59,10 +59,11 @@
 						</select>
 					</div>
 					<label id="campos" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">* Campos obligatorios</label>
-				</form>
-				<div id="bloque-boton" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center-block">
+					<div id="bloque-boton" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center-block">
 					<button type="submit" id="boton">Registrar</button>
 				</div>
+				</form>
+				
 			</div>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
