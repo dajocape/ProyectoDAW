@@ -53,8 +53,8 @@
             </nav>
 			<div id="datos" class="row center-block">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<form class="center-block">
-					<h1>REPORTAR OBJETO</h1>
+					<form action="inicio.html" class="center-block">
+						<h1>REPORTAR OBJETO</h1>
 						<div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6" id="col1">
 							<h2 class="titulo-datos">DATOS DEL OBJETO</h2>
 							<label>Objeto<span>*</span></label>
@@ -69,20 +69,20 @@
 						<div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6" id="col2">
 							<h2 class="titulo-datos">DATOS DEL CONTACTO</h2>
 							<label>Teléfono</label>
-							<input type="text" class="form-control" id="telf" name="telf" required>
-							<label>Celular</label>
+							<input type="text" class="form-control" id="telf" name="telf">
+							<label>Celular<span>*</span></label>
 							<input type="text" class="form-control" id="celular" name="celular" required>
 							<label>Otro correo</label>
-							<input type="text" class="form-control" id="otroCorreo" name="otroCorreo"  required>
-							
+							<input type="text" class="form-control" id="otroCorreo" name="otroCorreo">
+							<label id="campos" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">* Campos obligatorios</label>
+						</div>
+						<div class="bloque-boton col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<input type="submit" class="btn btn-primary" value="Aceptar">
+						</div>
+						<div class="bloque-boton col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<input type="reset" class="btn btn-primary" value="Cancelar">
 						</div>
 					</form>					
-				</div>
-				<div class="bloque-boton col-xs-6 col-sm-6 col-md-6 col-lg-6">
-					<a class="botones" href="inicio.html">Aceptar</a>
-				</div>
-				<div class="bloque-boton col-xs-6 col-sm-6 col-md-6 col-lg-6">
-					<a class="botones" href="inicio.html">Cancelar</a>
 				</div>
 			</div>
 		</div>

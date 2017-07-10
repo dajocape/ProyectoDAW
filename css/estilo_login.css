@@ -32,21 +32,6 @@ label {
 #datos > p {
 	margin-top: 20px;
 }
-.boton_ingresar{
-	background-color: rgba(85, 159, 244, 1);
-    border: none;
-    color: white;
-    padding: 10px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-
-}
-.boton_ingresar:hover{
-	text-decoration: none !important;
-	color: white !important;
-}
 #bloque-link {
 	text-align: center;
 	margin: 10px 0px;
