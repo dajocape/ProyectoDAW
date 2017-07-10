@@ -22,18 +22,21 @@
 			</div>
 			<div id="datos" class="row center-block">
 				<h3 class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Log in</h3>
-				<form class="center-block">
+				<form class="center-block" data-toggle="validator" role="form">
 				  	<div class="form-group">
 				    	<label>Usuario: </label>
-				    	<input type="text" class="form-control" id="usuario" required>
+				    	<input type="text" class="form-control" id="usuario" maxlength="15" data-error="Campo requerido" required>
+				    	<div class="help-block with-errors"></div>
 				  	</div>
 				  	<div class="form-group">
 				    	<label>Contraseña: </label>
-				    	<input type="password" class="form-control" id="contraseña" required>
+				    	<input type="password" class="form-control" id="contraseña" data-minlength="6" maxlength="15" data-error="Mínimo 6 caracteres" required>
+				    	<div class="help-block with-errors"></div>
 				  	</div>
 				</form>
-				<div id="bloque-boton" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<a class="boton_ingresar" href="inicio.html">Ingresar</a>
+				<div id="bloque-boton" class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<button id="submit" type="submit" class="btn btn-primary boton_ingresar">Ingresar</button>
+					<!--a id="submit" type="submit" class="btn btn-primary" href="inicio.html" role="button">Ingresar</a-->
 				</div>
 				<div id="bloque-link" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<a href="registro.html">Registrarse</a>
@@ -42,5 +45,6 @@
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/validator.js"></script>
 	</body>
 </html>
